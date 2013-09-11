@@ -2,7 +2,7 @@
 #include <string.h>
 #include <iostream>
 #include "Manager.h"
-
+//Message to test
 Employee::Employee(int id, char* name)
    {
    ID = id;
