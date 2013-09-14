@@ -4,8 +4,9 @@ class Manager
    {
    private:
       int totalHours;
+	  Employee* employee;
    protected:
-   private:
+   public:
       Manager();
 
       void getWorkerHours(Employee* emp);
