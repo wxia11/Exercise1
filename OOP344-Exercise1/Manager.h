@@ -1,10 +1,11 @@
-class Employee;
+//class Employee;
+#include "Employee.h"
 
 class Manager
    {
    private:
       int totalHours;
-	  Employee* employee;
+	  Employee employee;
    protected:
    public:
       Manager();

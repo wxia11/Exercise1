@@ -1,8 +1,17 @@
 #include "Employee.h"
 #include <string.h>
 #include <iostream>
-#include "Manager.h"
+//#include "Manager.h"
 //Message to test
+
+Employee::Employee()
+   {
+   ID = 0;
+   Employee::name = "\0";
+   boss = 0;
+   hours = 0;
+   }
+
 Employee::Employee(int id, char* name)
    {
    ID = id;
