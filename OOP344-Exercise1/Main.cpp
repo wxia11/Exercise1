@@ -1,20 +1,20 @@
 #include "Manager.h"
 #include "Employee.h"
 #include <iostream>
-//message to test
+
 int main()
    {
-   Manager* man;
+   Manager man;
 
    Employee dan(1, "Dan");
    Employee mike(2, "Mike");
    Employee alex(3, "Alex");
    Employee sarah(4, "Sarah");
 
-   dan.setBoss(man);
-   mike.setBoss(man);
-   alex.setBoss(man);
-   sarah.setBoss(man);
+   dan.setBoss(&man);
+   mike.setBoss(&man);
+   alex.setBoss(&man);
+   sarah.setBoss(&man);
 
    dan.work(2);
    mike.work(2);
@@ -32,7 +32,7 @@ int main()
    sarah.report();
    dan.work(5);
    dan.report();
-   man->report();
+   man.report();
    alex.work(4);
    alex.work(3);
    alex.work(7);
@@ -44,7 +44,7 @@ int main()
    sarah.report();
    dan.work(8);
    dan.work(7);
-   man->report();
+   man.report();
    mike.work(11);
    mike.work(4);
    alex.work(7);
@@ -55,8 +55,8 @@ int main()
    mike.report();
    alex.report();
    sarah.report();
-   man->report();
-   man->report();
+   man.report();
+   man.report();
 
 
    return 0;

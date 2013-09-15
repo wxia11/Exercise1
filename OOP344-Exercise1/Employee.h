@@ -1,4 +1,4 @@
-#include "Manager.h"
+class Manager;
 
 class Employee
    {
@@ -9,7 +9,6 @@ class Employee
       int hours;
    protected:
    public:
-      Employee();
 	  Employee(int id, char* name);
       ~Employee();
       void setBoss(Manager* newBoss);
